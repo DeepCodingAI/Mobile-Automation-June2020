@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="NYP Android Test Automation Script" parallel="false">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="appType" value="phone"/>
+    <parameter name="deviceType" value="RealDevice"/>
+    <parameter name="deviceName" value="5T"/>
+    <parameter name="version" value="9"/>
+    <parameter name="moduleName" value="NYP"/>
+    <parameter name="appName" value="nyp-v3.apk"/>
+
+    <test name = "NYP Test">
+
+        <classes>
+            <class name="nyptest.TestArticles" />
+        </classes>
+
+    </test>
+
+</suite>
+
